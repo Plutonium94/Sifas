@@ -1,0 +1,631 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Indoor Living Furniture, marques distribuees, hotellerie de luxe, showrooms">
+	<title>Sifas - Indoor Living Furniture</title>
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<style>
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		.sans {
+			font-family: "Century Gothic", "Arial", "sans-serif";
+		}
+
+		.serif {
+			font-family: "Times New Roman", "serif";
+		}
+
+		.contenuCentre {
+			padding-left: 140px;
+			padding-right: 140px;
+		}
+
+		#navigation {
+			height: 900px;
+			box-shadow: 0px 20px #cccccc;
+			background-color: rgb(213,106,23);
+			color: black;
+			width: 20%;
+			position: fixed;
+			font-family: 'Century Gothic';
+			font-size: 36px;
+			padding: 20px;
+			z-index: 50;
+		}
+
+		#menuButtonDiv {
+			position: fixed;
+			height: 34px;
+			padding: 3px 5px;
+		}
+
+		#menuButtonDiv, #menuButton {
+			background-color: black;
+		}
+
+		#menuButton {
+			color: rgb(213,106,23);
+			border: 0;
+		}
+
+		#navigation a {
+			color: black;
+		}
+
+		#navigation a:hover {
+			color: white;
+		}
+
+
+
+		
+
+		#thinBarreHaute {
+			background-color: rgb(171,168,159);
+			text-align: right;
+			padding: 7px;
+		}
+
+		#thinBarreHaute a {
+			color: black;
+		}
+
+		#barreHaute, #thinBarreHaute, .sans {
+			font-family: Arial;
+		}
+
+
+		#barreHaute {
+			background-color: rgb(158,140,126);
+			padding: 10px;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
+		}
+
+		#barreHaute #titrePrincipale {
+			color: rgb(75, 74, 72);
+		}
+
+		#barreHaute a {
+			color: rgb(101,103	,92);
+			font-weight: bold;
+		}
+
+		#barreHaute > div:nth-child(2) {
+			margin-left: 30px;
+		}
+
+		
+
+		#barreHaute #titrePrincipale {
+			font-size: 70px;
+		}
+
+		#poolLoungeImage {
+			width: 100%;
+		}
+
+		.slideHeader {
+			text-align: center;
+			padding-top: 40px;
+		}
+
+		
+
+		.slideHeader  hr{
+			background-color: black;
+			height: 1px;
+			width: 30%;
+		}
+
+		.slideHeaderTop {
+			font-family: "Century Gothic";
+			font-size: 32px;
+			margin-bottom: -15px;
+		}
+
+		/*.slideHeaderBottom {
+			position: relative;
+			top: -30px;
+			width: 19%;
+		}*/
+
+		.slideHeaderBottom > h3{ 
+			font-family: "Times New Roman";
+			text-align: center;
+			font-size: 48px;
+			color: rgb(79,79,79);
+			font-weight: bold;
+		}
+
+		.slideHeaderBottom {
+			display: flex;
+			align-items: center;
+		}
+
+		#produitsSlide {
+			background-image : url('site_png/bois-blanc.png');
+		}
+
+		#produitsSlide div.col-md-4 {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 1800px;
+		}
+
+		#produitsSlide .produit {
+			background-color: white;
+			text-align: center;
+			font-family: "Century Gothic", "sans-serif";
+			padding-bottom: 20px;
+			transition: box-shadow 1.5s, width 1.5s;
+		}
+
+		#produitsSlide .produit:hover {
+			box-shadow: 20px 10px rgb(64,64,64);
+			width: 420px;
+
+		}
+
+		#produitsSlide .produit h5 {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		#produitsSlide .produit h4 {
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		#produitsSlide .produit button {
+			background-color: rgb(64,64,64);
+			color: white;
+			border: 0;
+			padding: 3px 18px;
+		}
+
+		#marquesDistribuesSlide #marquesBody {
+			background-image: url("site_png/Calque 70.png");
+		}
+
+		#marquesDistribuesSlide div.row {
+			padding: 20px 0px;
+		}
+
+		#marquesDistribuesSlide img {
+			width: 171px;
+			height: 106px;
+			background-color: white;
+		}
+
+		#hotellerieLuxeSlide img {
+			z-index: 0;
+			position: relative;
+		}
+
+		#hotellerieLuxeSlide img:not(first-child) {
+			margin-left: -25px;
+		}
+
+		#hotellerieLuxeSlide img:hover {
+			z-index: 1;
+		}
+
+		#lastSlide #inscriptionNewsLetterPanel {
+			background-color: rgb(59,59,59);
+			color: white;
+			display: flex;
+			flex-wrap: nowrap ;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			font-size: 28px;
+			justify-content: space-between;
+		}
+
+		#lastSlide > div:first-child {
+			background-color: rgb(102,102,102);
+			color: white;
+		}
+
+		#lastSlide > div:first-child h1 {
+			font-size: 50px;
+		}
+
+		#lastSlide textarea {
+			width: 316px;
+			padding: 15px;
+		}
+
+		#lastSlide input {
+			padding: 5px;
+			margin-bottom: 15px;
+			width: 316px;
+		}
+
+		#lastSlide #contactDiv {
+			font-size: 24px;
+			font-family: "Century Gothic", "Arial", "sans-serif";
+		}
+
+		#lastSlide #contactDiv h6 {
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		#lastSlide #inscriptionNewsLetterPanel .serif {
+			font-size: 33px;
+		}
+
+		#lastSlide #inscriptionNewsLetterPanel form button {
+			color: black;
+		}
+
+		#lastSlide #prefinalLinksParent {
+			background-color: rgb(133,133,133);
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+		}
+
+		#lastSlide #prefinalLinksParent #prefinalLinksParentLeft td{
+			padding: 30px 50px;
+			padding-left: 0px;
+			font-size: 30px;
+			color: black;
+		}
+
+		#lastSlide  #questionForm {
+			margin-top: 20px;
+		}
+
+		#lastSlide #finalPanel {
+			background-color: rgb(151,150,145);
+			color: white;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		#lastSlide #finalPanel a {
+			color: white;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div id="menuButtonDiv">
+		<button type="button" id="menuButton"><span><i class="fa fa-bars"></i></span> Menu</button>
+	</div>
+
+	<nav id="navigation">
+		<div><a href="#">UNIVERS SIFAS</a></div>
+		<div><a href="#marquesDistribuesSlide">MARQUES</a></div>
+		<div><a href="#produitsSlide">PRODUITS</a></div>
+		<div><a href="#">ACTUALIT&Eacute;S</a></div>
+		<div><a href="#">CONTACT</a></div>
+	</nav>
+	
+
+	<div class="slide">
+
+		<div id="thinBarreHaute"  >
+			<i class="fa fa-facebook-official" aria-hidden="true"></i>
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+			&nbsp;&nbsp;
+			<a href="#">MON COMPTE</a> | <a href="#">MON PANIER</a>&nbsp;&nbsp;&nbsp;FR | GB
+		</div>
+		<div id="barreHaute">
+			<div id="topSifas"><img src="site_png/logo copie 2.png"></div>
+			<div>
+				<h1 id="titrePrincipale">IN-OUTDOOR LIVING FURNITURE</h1>
+				<a href="#">UNIVERS SIFAS</a> | <a href="#">MARQUES</a>
+				 | <a href="#">PRODUITS</a> | <a href="#">SHOWROOMS</a> 
+				 | <a href="#">ACTUALIT&Eacute;S</a> 
+				 | <a href="#">CONTACT</a> | <a href="#">ACC&Egrave;S PRO</a>
+			</div>
+
+		</div>
+		<img src="site_png/poolLoungeImage.png" id="poolLoungeImage">
+	</div>
+
+	<div class="slide" id="produitsSlide">
+		<div class="slideHeader">
+			<div class="slideHeaderTop">LES</div>
+			<div class="slideHeaderBottom contenuCentre"><hr><h3>PRODUITS</h3><hr></div>
+		</div>
+
+		
+
+		<div class="row contenuCentre">
+			<div class="col-md-4">
+				<div class="produit">
+					<img src="site_png/Calque 46.png">
+					<h5>Fauteuil cocktail</h5>
+					<p>86 cm x 76 cm x H61 cm</p>
+					<h4>1020 €</h4>
+					<button type="button"><span><i class="fa fa-cart-arrow-down"></i></span> ajouter au panier</button><br>
+				</div>
+				<div class="produit">
+					<img src="site_png/Calque 48.png">	
+					<h5>Fauteuil cocktail</h5>
+					<p>86 cm x 76 cm x H61 cm</p>
+					<h4>1020 €</h4>
+					<button type="button"><span><i class="fa fa-cart-arrow-down"></i></span> ajouter au panier</button><br>
+				</div>
+				<br>
+				<div class="produit">
+					<img src="site_png/Calque 60.png">
+					<h5>Fauteuil cocktail</h5>
+					<p>86 cm x 76 cm x H61 cm</p>
+					<h4>1020 €</h4>
+					<button type="button"><span><i class="fa fa-cart-arrow-down"></i></span> ajouter au panier</button><br>
+				</div>
+				<br>
+				<div class="produit">
+					<img src="site_png/Calque 62.png">
+					<h5>Fauteuil cocktail</h5>
+					<p>86 cm x 76 cm x H61 cm</p>
+					<h4>1020 €</h4>
+					<button type="button"><span><i class="fa fa-cart-arrow-down"></i></span> ajouter au panier</button><br>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="produit">
+					<img src="site_png/Calque 47.png">
+					<h5>Fauteuil cocktail</h5>
+					<p>86 cm x 76 cm x H61 cm</p>
+					<h4>1020 €</h4>
+					<button type="button"><span><i class="fa fa-cart-arrow-down"></i></span> ajouter au panier</button><br>
+				</div>
+				<div class="produit">
+					<img src="site_png/brownSinkChair.png">
+					<h5>Fauteuil cocktail</h5>
+					<p>86cm x 76 cm x H61 cm</p>
+					<h4>1020 €</h4>
+					<button type="button"><span><i class="fa fa-cart-arrow-down"></i></span> ajouter au panier</button><br>
+				</div>
+				<div class="produit">
+					<img src="site_png/Calque 63.png">
+					<h5>Fauteuil cocktail</h5>
+					<p>86cm x 76 cm x H61 cm</p>
+					<h4>1020 €</h4>
+					<button type="button"><span><i class="fa fa-cart-arrow-down"></i></span> ajouter au panier</button><br>
+				</div>
+				<div class="produit">
+					<img src="site_png/Calque 50.png">
+					<h5>Fauteuil cocktail</h5>
+					<p>86cm x 76 cm x H61 cm</p>
+					<h4>1020 €</h4>
+					<button type="button"><span><i class="fa fa-cart-arrow-down"></i></span> ajouter au panier</button><br>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="produit">
+					<img src="site_png/Calque 50.png">
+					<h5>Fauteuil cocktail</h5>
+					<p>86cm x 76 cm x H61 cm</p>
+					<h4>1020 €</h4>
+					<button type="button"><span><i class="fa fa-cart-arrow-down"></i></span> ajouter au panier</button><br>
+				</div>
+				<div class="produit">
+					<img src="site_png/Calque 49.png">
+					<h5>Fauteuil cocktail</h5>
+					<p>86cm x 76 cm x H61 cm</p>
+					<h4>1020 €</h4>
+					<button type="button"><span><i class="fa fa-cart-arrow-down"></i></span> ajouter au panier</button><br>
+				</div>
+				<div class="produit">
+					<img src="site_png/Calque 61.png">
+					<h5>Fauteuil cocktail</h5>
+					<p>86cm x 76 cm x H61 cm</p>
+					<h4>1020 €</h4>
+					<button type="button"><span><i class="fa fa-cart-arrow-down"></i></span> ajouter au panier</button><br>
+
+				</div>
+				<div class="produit">
+					<img src="site_png/Calque 64.png">
+					<h5>Fauteuil cocktail</h5>
+					<p>86cm x 76 cm x H61 cm</p>
+					<h4>1020 €</h4>
+					<button type="button"><span><i class="fa fa-cart-arrow-down"></i></span> ajouter au panier</button><br>
+				</div>
+			</div>
+		</div>
+
+
+	</div> <!-- div.slide#produitsSlide -->
+
+	<div class="slide" id="marquesDistribuesSlide">
+		<div class="slideHeader">
+			<div class="slideHeaderTop">MARQUES</div>
+			
+			<div class="slideHeaderBottom"><hr><h3>DISTRIBU&Eacute;ES</h3><hr></div>
+		</div>
+		<div id="marquesBody" class="contenuCentre">
+			<div class="row">
+				<div class="col-md-2"><img src="site_png/logos_etnikraft.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_botania.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_dedon.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_kartell.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_flexform.png"></div>
+				<div class="col-md-2"><img src="site_png/logo copie.png"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"><img src="site_png/logos_sheppard.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_muuto2.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_gloster.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_fermob.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_vibieffe.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_etnikraft.png"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"><img src="site_png/logos_etnikraft.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_botania.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_dedon.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_kartell.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_flexform.png"></div>
+				<div class="col-md-2"><img src="site_png/logo copie.png"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"><img src="site_png/logos_sheppard.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_muuto2.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_gloster.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_fermob.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_vibieffe.png"></div>
+				<div class="col-md-2"><img src="site_png/logos_etnikraft.png"></div>
+			</div>
+
+
+		</div>
+
+	</div> <!-- div.slide#marquesDistribuesSlide -->
+
+	<div class="slide" id="hotellerieLuxeSlide">
+		<div class="slideHeader">
+			<div class="slideHeaderTop">SIFAS HABILLE</div>
+			<div class="slideHeaderBottom contenuCentre"><hr><h3>L'H&Ocirc;TTELLERIE DE LUXE</h3><hr></div>
+		</div>
+		<div class="slideBody contenuCentre">
+			<img src="site_png/salleamanger_Verona_ok_new.png">
+			<img src="site_png/20_3.png">
+			<img src="site_png/illustration_menu_jardiniere.png">
+			<img src="site_png/23_4.png">
+			<br>
+			<img src="site_png/62_2.png">
+			<img src="site_png/bandeaux_GAMME.png">
+			<img src="site_png/23_5.png">
+			<img src="site_png/20_4.png">
+
+
+
+		</div>
+	</div>
+	<div id="demiSlideTexte" class="contenuCentre">
+		<p><strong>Mobilier de jardin design</strong></p>
+		<p>Sifas a fait appel à ses designers pour réaliser des collections variées de mobilier extérieur.<br>
+		Découvrez ces gammes exclusives de mobilier jardin.<br>
+		salon de jardin design - table de jardin design - chaise longue de jardin design</p>
+		
+		<p><strong>Les salons d'extérieur design pour grand confort</strong></p>
+		<p>Chez sifas, retrouvez tous nos créateurs et marques associées présentant des salons de jardin de luxe. L'aménagement extérieur  s'est considérablement développé ces dernières années avec l'arrivée  de meubles élégants mais à la fois fonc-<br>
+		tionnel. On considère désormais sa terrasse ou son jardin comme un prolongement de son logement et un véritable espace de vie où toute la famille aime se réunir. C'est ainsi que les salons se modernisent, que les courbes deviennent plus aériennes et que les matières se veulent haut de gamme. On exige les meilleures qualités possibles pour résister aux intempéries et conditions météorologiques.</p>
+
+		<p><strong>Les cuisines de jardin</strong></p>
+		<p>Les showrooms Sifas vous propose de découvrir ses cuisines de jardins et salon d'extérieur  pour tous vos besoins d'aménagement de vos espaces de réception dans les jardins et terrasses. Les cuisines d'été permettent de partager un moment de convivalité avec toute votre famille et vos amis et se déclinent désormais sous plusieurs formes. Que ce soit pour l'aspect pratique ou le côté esthétique, toutes les formes de cuisine de jardin haut de gamme sont disponibles chez<br>
+		Sifas. Avec un vaste panel de marques et designers référencés, Sifas se positionne aujourd'hui comme le premier revendeur sur la Côte d'Azur de mobilier extérieur.</p>
+	</div>
+
+	<div class="slide " id="lastSlide">
+		<div class="contenuCentre">
+			<div class="row">
+				<h1 class="col-md-6 serif">Posez votre question.&nbsp;&nbsp;&nbsp;<span class="fa fa-gift"></span> </h1>
+				<div class="col-md-5">
+					<p >et si vous venez en magasin pour passer <br>votre commande, ce coussin pour Ipad OFFERT *</p>
+					<p class="disclaimer">* Dans la limite des stocks disponibles, à partir de 1000 euros d'achat en boutique.</p>
+				</div>
+
+
+			</div>
+			<form id="questionForm">
+				<div class="row">
+					<div class="col-md-4">
+						<textarea name="question" placeholder="Votre question" rows="7" columns="80"></textarea>
+					</div>
+					<div class="col-md-4">
+						<input name="nom" type="text" placeholder="Nom"><br>
+						<input name="prenom" type="text" placeholder="Prénom"><br>
+						<input name="courriel" type="email" placeholder="E-mail"><br>
+						<input name="" type="text">
+					</div>
+					<div class="col-md-4" id="contactDiv">
+						<h6>Contact</h6>
+
+						<p>Sifas<br>Bretelle de l'autoroute<br>06250 Mougins - France</p>
+
+						<p>Phone: +33 (0)4 93 45 88 00<br>Fax:&nbsp;&nbsp;&nbsp;&nbsp;+33 (0)4 92 18 64 20</p>
+					</div>
+
+
+				</div>
+
+				<div class="row">
+					<p>Merci de déverrouiller pour permettre l'envoie du formulaire</p>
+				</div>
+			</form>
+		</div>
+		<div id="inscriptionNewsLetterPanel" class="contenuCentre">
+			<span><span class="sans">Inscription</span>&nbsp;<span class="serif">NEWSLETTER</span></span>&nbsp;&nbsp;
+			<form> <input type="email" placeholder="Email" name="courriel"> <button type="submit">OK</button></form>
+			<span><span class="sans">Faîtes votre</span> <span class="serif">PLAN</span></span>
+
+		</div>
+
+		<div id="prefinalLinksParent" class="contenuCentre">
+			<table id="prefinalLinksParentLeft">
+				<tr>
+					<td>UNIVERS</td>
+					<td>SHOWROOMS</td>
+					<td>PRODUITS</td>
+					<td>MARQUES</td>
+				</tr>
+				<tr>
+					<td>ACCES PROS</td>
+					<td>REVENDEURS</td>
+					<td>HÔTELS</td>
+				<tr>
+
+			</table>
+			<div id="prefinalLinksParentRight">
+				<img src="site_png/logo copie 2.png">
+				<p>IN-OUTDOOR<br>LIVING<br>FURNITURE</p>
+			</div>
+
+		</div>
+		<div id="finalPanel" class="contenuCentre">
+			<p><a href="#">MENTIONS L&Eacute;GALES</a> | <a href="#">CONTACT</a> | <a href="#">CR&Eacute;DITS</a> | COPYRIGHT 1956-2016 Sifas
+		</div>
+
+	</div>
+
+	<script>
+
+		$(document).ready(function() {
+
+			var menuExpanded = false;
+			$('#navigation').hide();	
+
+			
+
+			$('#menuButton').click(function() {
+				//=showNavigation();
+				$('#navigation').show();
+				$('#menuButtonDiv').hide();
+				setTimeout(function() {
+					menuExpanded = true;
+				}, 500);
+			});
+
+			
+			$(':not(#menuButton), :not(#navigation) ').click(function(e) {
+				e.stopPropagation();
+				if(menuExpanded) {
+					$('#navigation').hide();
+					$('#menuButtonDiv').show();
+					menuExpanded = false;
+				}
+			});
+		});
+		
+	</script>
+</body>
+</html>
